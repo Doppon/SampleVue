@@ -13,11 +13,15 @@
                 Hover your mouse over me for a few seconds
                 to see my dynamically bound title!
             </span>
-        </div>
-        <div id="app-3">
+
+            <br>
+            <br>
+
             <span v-if="seen">Now you see me</span>
-        </div>
-        <div id="app-4">
+
+            <br>
+            <br>
+
             <ol>
                 <li v-for="todo in todos">
                     {{ todo.text }}
@@ -32,24 +36,14 @@
         el: '#app',
         data: {
             hello: 'こんにちは！！',
-            message: 'You loaded this page on ' + new Date().toLocaleString
-        },
-    })
-    var app3 = new Vue({
-        el: '#app-3',
-        data: {
-            seen: true
-        },
-    })
-    var app4 = new Vue({
-        el: '#app-4',
-        data: {
+            message: 'You loaded this page on ' + new Date().toLocaleString,
+            seen: true,
             todos: [
                 { text: 'Learn JavaScript' },
                 { text: 'Learn Vue' },
                 { text: 'Build something awesome' }
             ]
-        },
+        }
     })
 </script>
 
